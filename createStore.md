@@ -3,7 +3,6 @@
 ```
 createStore(reducer, [preloadedState], [enhancer])
 ```
-
 ### Arguments
 - reducer (Function): A reducing function that returns the next state tree, given the current state tree and an action to handle.
 
@@ -13,7 +12,6 @@ createStore(reducer, [preloadedState], [enhancer])
 
 ### Returns
 - (Store): An object that holds the complete state of your app. The only way to change its state is by dispatching actions. You may also subscribe to the changes to its state to update the UI.
-
 
 ```
 import {createStore} from 'redux'

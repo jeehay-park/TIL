@@ -1,5 +1,3 @@
-🔗 [ref](https://www.freecodecamp.org/news/react-useeffect-absolute-beginners/)
-
 # useEffect
 - When the core React Hooks were added to the library in 2018 (useState, useEffect, and so on), many developers were confused by the name of this hook: "useEffect".
 
@@ -109,5 +107,5 @@ useEffect(() => {
   //And any time any dependency value changes
 }, [prop, state]);
 ```
-
+🔗[The React useEffect Hook for Absolute Beginners](https://www.freecodecamp.org/news/react-useeffect-absolute-beginners/)
 

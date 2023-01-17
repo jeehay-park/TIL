@@ -47,5 +47,5 @@ let x = 1 + 2
 let foo = () => 1 + 2
 ```
 
-
+![thunk](images\thunk.png)
 
