@@ -1,4 +1,4 @@
 # Redux Fundamentals
 
-![redux-fundamentals](images\ReduxAsyncDataFlowDiagram.gif)
+![redux-fundamentals](images/ReduxAsyncDataFlowDiagram.gif)
 
