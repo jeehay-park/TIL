@@ -6,14 +6,6 @@
 - This can improve performance.
 - One reason to use useCallback is to prevent a component from re-rendering unless its props have changed.
 
-# useCallback
-
-- The React useCallback Hook returns a memoized callback function.
-- Think of memoization as caching a value so that it does not need to be recalculated.
-- This allows us to isolate resource intensive functions so that they will not automatically run on every render.
-- The useCallback Hook only runs when one of its dependencies update.
-- This can improve performance.
-
 ```
 import { useState } from "react";
 import ReactDOM from "react-dom/client";
