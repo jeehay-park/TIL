@@ -2,7 +2,9 @@
 
 📅 27/04/2023
 
-Bootstrap is a popular open-source front-end web development framework used to build responsive and mobile-first websites and web applications. It was developed by Twitter and is now maintained by a community of developers.
+Bootstrap is a popular open-source front-end web development framework used to build responsive and mobile-first websites and web applications. Bootstrap was developed by Mark Otto and Jacob Thornton at Twitter, and released as an open source product in August 2011 on GitHub.
+
+In June 2014 Bootstrap was the No.1 project on GitHub!
 
 Bootstrap provides a set of pre-built HTML, CSS, and JavaScript components and templates that can be easily customized to create modern, professional-looking websites. It includes features such as grid systems, typography, forms, buttons, navigation, and more. 
 
@@ -130,3 +132,8 @@ export default App;
 In this example, we import the Bootstrap CSS file using the `import` statement at the top of the file. We also import three Bootstrap components (`Container`, `Form`, and `Button`) from the `react-bootstrap` library. We then use these components in our JSX code to create a simple form with an email input, password input, and submit button. The `Container` component provides a responsive container that adjusts its width based on the screen size. The `Form` and `Form.Group` components provide pre-built form elements styled with Bootstrap. The `Button` component provides a pre-built button styled with Bootstrap.
 
 This is just a simple example, but it demonstrates how you can use Bootstrap components and styles in your React code to create responsive and mobile-friendly web applications.
+
+
+📅 08/05/2023
+
+
