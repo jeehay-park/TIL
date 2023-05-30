@@ -39,4 +39,33 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 ```
 
+📅 30/05/2023
+
+```
+    const handleAPIcall = useCallback(async () => {
+         
+        await dispatch(
+            addUser({
+                userId : formData.userId, 
+                userName : formData.userName,
+                password : formData.password,
+                passwordConfirm : formData.passwordConfirm, 
+                level : formData.level, 
+                email : formData.email 
+            }));
+        
+        setOpen(false);
+      
+       
+      }, [dispatch, formData]);
+```
+
+In the `useCallback` hook, the dependency array specifies the values that the callback function depends on. When any of the values in the dependency array change, the callback function is re-created.
+
+If you don't include `formData` in the dependency array, the callback function will not be recreated when `formData` changes. This means that the callback function will continue to reference the initial values of `formData` that were present when the component was first rendered.
+
+Including `formData` in the dependency array ensures that the callback function is recreated whenever `formData` changes. This is important because you want the callback function to have access to the latest values of `formData` when it is executed.
+
+If you don't include `formData` in the dependency array and the `handleAPIcall` function is used in a context where `formData` can change, you may encounter unexpected behavior or stale data. Therefore, it's generally recommended to include all the values that the callback function depends on in the dependency array to ensure consistent and up-to-date behavior.
+
 
