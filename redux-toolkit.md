@@ -38,4 +38,22 @@ The createSelector utility from the Reselect library, re-exported for ease of us
 - RTK Query is an optional addon included in the Redux Toolkit package, and its functionality is built on top of the other APIs in Redux Toolkit.
 
 
+# Redux Toolkit's `createAsyncThunk`
+Redux Toolkit's `createAsyncThunk` is a utility function that simplifies the process of creating asynchronous action creators in Redux. It combines the concepts of thunks (functions that can contain async logic) and Redux actions, providing a standardized way to handle asynchronous operations and manage the associated state.
+
+When you use `createAsyncThunk`, it generates three different action types for your async operation: a "pending" action, a "fulfilled" action, and a "rejected" action. These action types follow a naming convention based on the name you provide when creating the async thunk.
+
+Here's a breakdown of what each action type represents:
+
+- **Pending**: This action type (`name/pending`) is dispatched when the async operation starts. It indicates that the request is in progress.
+
+- **Fulfilled**: This action type (`name/fulfilled`) is dispatched when the async operation successfully completes. It carries the result of the operation as payload.
+
+- **Rejected**: This action type (`name/rejected`) is dispatched when the async operation encounters an error or is rejected. It typically includes the error message or any relevant error information.
+
+By using `createAsyncThunk`, you can encapsulate your async logic in a payload creator function that is passed as the second argument to `createAsyncThunk`. This function should contain the asynchronous code, such as making API requests or interacting with external services. The payload creator function can be an async function or a regular function that returns a Promise.
+
+The `createAsyncThunk` utility takes care of dispatching the appropriate pending, fulfilled, or rejected actions based on the outcome of the async operation. It also handles error handling and simplifies the management of loading and error states in your Redux store.
+
+Overall, `createAsyncThunk` provides a convenient and standardized way to handle asynchronous operations in Redux, reducing boilerplate code and making it easier to manage async logic and associated state changes.
 
