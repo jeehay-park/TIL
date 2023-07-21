@@ -58,4 +58,27 @@ In summary, AC power and DC power are two different types of electrical power. A
     **rectifier**: an electrical device which converts an alternating current into a direct one by allowing a current to flow through it in one direction only.
 
 
-    
+### MPC wallet
+
+Multi-Party Computation (MPC) wallets use a cryptographic technique where the private key is divided into multiple shares, with each share distributed among different parties.
+
+An MPC wallet is a powerful type of smart contract wallet that provides enhanced security, flexibility, and control over digital assets on Ethereum & EVM-compatible blockchains. By leveraging MPC technology and smart contracts, MPC wallets enable secure collaboration and decision-making across various use cases.
+
+### USIM
+USIM stands for "Universal Subscriber Identity Module." It is a type of SIM (Subscriber Identity Module) card used in mobile devices, particularly in 3G and 4G/LTE networks. USIM cards are an evolution of the traditional SIM cards used in mobile phones and provide additional features and security enhancements.
+
+Key features of USIM cards include:
+
+1. **Enhanced Security:** USIM cards offer improved security measures compared to traditional SIM cards. They use more robust encryption algorithms and authentication mechanisms, making them less susceptible to certain types of attacks and fraud.
+
+2. **Increased Storage Capacity:** USIM cards have larger memory capacity than traditional SIM cards, allowing them to store more data, such as contacts, messages, and additional applications.
+
+3. **Enhanced Network Features:** USIM cards enable access to advanced network features and services, especially in 3G and 4G/LTE networks. They support features like high-speed data transmission, video calling, and multimedia services.
+
+4. **International Roaming:** USIM cards are designed to be compatible with various mobile networks worldwide, making it easier for users to switch between different networks while traveling internationally.
+
+5. **Authentication and Encryption:** USIM cards play a crucial role in authenticating mobile devices on the network and establishing secure communications between the device and the mobile operator's infrastructure.
+
+6. **Personalization:** USIM cards can be personalized with user-specific data, such as phone numbers, subscription information, and user preferences.
+
+USIM cards are commonly used in 3G and 4G/LTE smartphones, tablets, and other mobile devices. They have become the standard SIM card for modern mobile networks and provide a range of benefits in terms of security, network compatibility, and support for advanced services.
