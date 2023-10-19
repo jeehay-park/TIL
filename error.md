@@ -11,3 +11,12 @@ Bug:
 A bug, on the other hand, is a specific type of error. It refers to a flaw or defect in software that causes it to behave in an unintended or incorrect way. Bugs are often the result of coding mistakes or oversights during the development process. They can cause software to crash, produce incorrect results, or exhibit unexpected behavior.
 
 In summary, errors are the broad category that encompasses any kind of mistake or flaw in software, while bugs specifically refer to defects or flaws in the code that cause the software to deviate from its intended behavior. Bugs are a subset of errors. When developers encounter errors or bugs, they typically need to identify, debug, and fix them to ensure the software functions correctly.
+
+
+📅 25/09/2023
+
+```
+Lockdown failed: TypeError: At intrinsics.Object.groupBy expected boolean not function
+
+```
+It's just an chrome extension which is causing this error. Try disabling your chrome extensions. In my case it was MetaMask extension.

@@ -14,7 +14,6 @@ console.log(err.response)
 ```
 
 📅 14/09/2023
-
 ```
 {
     "error": {
@@ -22,6 +21,12 @@ console.log(err.response)
         "message": "Connection is close. Cannot send anything"
     }
 }
+
+```
+
+📅 20/09/2023
+```
+Mixed Content: The page at 'https://43.201.210.221/home' was loaded over HTTPS, but requested an insecure element 'https://43.201.210.221/ictk-logo.png'. This request was not upgraded to HTTPS because its URL's host is an IP address.
 
 ```
 

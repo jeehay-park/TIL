@@ -1,5 +1,7 @@
 # Redux Store
 
+📅 19/09/2023
+
 ```
 // kms-admin-frontend/src/store
 /store.js
