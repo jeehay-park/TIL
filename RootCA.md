@@ -21,3 +21,6 @@ A Root CA, or Root Certificate Authority, is a fundamental component of the publ
 8. **Security and Trustworthiness:** Root CAs are critical to the security and trustworthiness of the internet. They must maintain strict security measures to protect their private keys, as a compromised Root CA could undermine the entire PKI system's trust.
 
 In summary, a Root CA is the highest level of trust in a PKI system, and its certificate is at the top of the trust chain. It serves as a cornerstone of online security by vouching for the authenticity of digital certificates used in secure communications on the internet.
+
+
+![Alt text](image.png)
