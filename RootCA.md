@@ -24,3 +24,4 @@ In summary, a Root CA is the highest level of trust in a PKI system, and its cer
 
 
 ![Alt text](image.png)
+

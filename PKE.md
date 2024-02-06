@@ -50,7 +50,6 @@ Dilithium, HAETAE, Kyber, and SMOUG are cryptographic algorithms designed for sp
 
 These algorithms are part of ongoing research and standardization efforts to replace current cryptographic algorithms (such as RSA and ECC) that may be vulnerable to attacks by quantum computers. The cryptographic community is actively exploring various approaches, and the NIST project plays a key role in evaluating and standardizing post-quantum cryptographic algorithms.
 
-
 RSA and ECC (Elliptic Curve Cryptography) are considered vulnerable to attacks by quantum computers because these algorithms rely on mathematical problems (factoring and discrete logarithms, respectively) that can be efficiently solved by quantum algorithms, such as Shor's algorithm.
 
 As for the post-quantum cryptographic algorithms like HAETAE, Dilithium, Kyber, and SMOUG, they are specifically designed to resist attacks from both classical and quantum computers. These algorithms are based on different mathematical problems, often related to lattice-based cryptography, code-based cryptography, hash-based cryptography, and other approaches that are believed to be secure against quantum algorithms.
