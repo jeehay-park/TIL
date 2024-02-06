@@ -497,4 +497,18 @@ This hybrid approach combines the efficiency of symmetric-key cryptography for m
 
 This approach ensures both confidentiality (via symmetric-key encryption) and secure key exchange (via asymmetric-key cryptography).
 
+Yes, you've captured the essence correctly. In the scenario described:
+
+1. **PQC Sign (Public Key Cryptography for Digital Signatures):**
+   - Used for certificate issuance and verification.
+   - Ensures the authenticity and integrity of digital certificates.
+   - Allows users to sign messages, data, or transactions, providing a non-repudiable way to prove the origin of the information.
+
+2. **PQC KEM (Public Key Cryptography for Key Encapsulation Mechanism):**
+   - Used for secure key exchange between users.
+   - Enables the creation of a shared secret between users for symmetric encryption.
+   - The shared secret derived from the key encapsulation process is used for protecting the confidentiality and integrity of data during communication sessions.
+
+So, you have one aspect of public key cryptography (PQC Sign) ensuring the trustworthiness of certificates and digital signatures, and another aspect (PQC KEM) facilitating secure communication channels by exchanging secret keys for symmetric encryption between users. Both aspects contribute to the overall security of the system.
+
 
