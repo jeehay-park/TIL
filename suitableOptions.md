@@ -95,5 +95,3 @@ The web development process typically involves several steps, including both fro
    - Regular updates, bug fixes, and security patches are applied to keep the application running smoothly and securely.
 
 Throughout the development process, front-end and back-end developers collaborate closely to ensure that the application meets the requirements, performs well, and provides a great user experience. Each developer focuses on their respective areas of expertise but communicates and coordinates with the rest of the team to deliver a successful project.
-
-
