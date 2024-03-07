@@ -51,5 +51,19 @@ Regarding where the data is physically stored:
 Both Local Storage and Session Storage are part of the Web Storage API in modern web browsers and provide a way for web applications to store data on the client side for various purposes.
 
 
+#
+Changing the storage from local storage to session storage can have an impact on your application's behavior, especially if you're relying on stored data for navigation or other critical functionalities.
 
+Here are some considerations when switching from local storage to session storage:
 
+1. **Session Lifetime**: Session storage data persists only for the duration of the page session. If the user closes the tab or browser, the session ends, and the session storage data is cleared. Ensure that your application's logic takes this into account, especially if you rely on session data for navigation or other essential functionalities.
+
+2. **Data Persistence**: Unlike local storage, which persists even after the browser is closed, session storage is scoped to the current browsing session. Any data stored in session storage will be lost once the session ends. Make sure that critical data necessary for the functioning of your application is properly handled or persisted elsewhere if needed.
+
+3. **Data Synchronization**: Since session storage is limited to the current session, you may need to synchronize data between sessions if necessary. This could involve fetching data from a server or other sources to ensure consistency across sessions.
+
+4. **Impact on Navigation**: In your case, if you're storing navigation-related data in session storage, such as the `homePath`, ensure that it's being set and retrieved correctly. Since session storage is cleared when the session ends, if the `homePath` is not being properly set or retrieved, it could lead to navigation issues.
+
+5. **Debugging**: When transitioning between different storage mechanisms, it's essential to thoroughly test your application to ensure that it behaves as expected. Debugging tools in browsers can help you inspect session storage data and track how it's being set and used within your application.
+
+If you've recently changed the storage mechanism and are encountering issues with navigation, it's possible that the way you're setting or retrieving the `homePath` from session storage needs to be adjusted to reflect the differences between local and session storage behavior. Double-check your implementation to ensure it's handling session storage correctly.

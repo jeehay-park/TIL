@@ -62,3 +62,20 @@ In the above code:
 Make sure to replace `'your-session-key'` with your actual session key and `'Hello, World!'` with your desired JSON data.
 
 Note that `btoa()` is a built-in JavaScript function that encodes a string to Base64. It is not specific to React or `crypto-js`.
+
+
+# Base64
+Base64 is a binary-to-text encoding scheme that converts binary data into a sequence of printable ASCII characters. It is commonly used to encode binary data, such as images, audio files, and other types of files, into a text format that can be safely transmitted over protocols that handle only text data, such as email or HTTP.
+
+In Base64 encoding, each group of three bytes from the original binary data is represented by four characters from the Base64 alphabet. These characters are typically letters (both uppercase and lowercase), digits, and two additional symbols, often "+" and "/". The "=" character is used as padding at the end of the encoded data if the input length is not a multiple of three bytes.
+
+Base64 encoding is not a method of encryption or compression; it is simply a way to represent binary data as text. Decoding Base64-encoded data reverses the process, converting the text back into its original binary form.
+
+Base64 encoding is widely used in various applications, including:
+
+1. Email attachments: Binary files such as images or documents are encoded in Base64 format to be included as text within email messages.
+2. Data transmission: Binary data is encoded in Base64 before transmission over protocols like HTTP or FTP that do not support binary data directly.
+3. Data storage: Base64-encoded data can be stored in text-based data formats, databases, or configuration files.
+4. Web development: Base64-encoded images can be embedded directly into HTML, CSS, or JavaScript code as data URLs.
+
+Overall, Base64 encoding provides a convenient way to represent binary data as text, making it suitable for various applications that involve the exchange or storage of binary data in text-based environments.
