@@ -130,5 +130,20 @@ Yes, you can use React with TypeScript, Next.js, and either Redux or Recoil. Her
 In summary, you can leverage the benefits of TypeScript's static typing along with the features of React, Next.js, Redux, and Recoil to build robust and type-safe web applications. Each of these technologies has strong support for TypeScript, allowing you to develop modern web applications with confidence.
 
 
+# _app.tsx
 
+📅 14/03/2024
 
+In Next.js, _app.tsx and app.tsx serve different purposes.
+
+_app.tsx:
+The _app.tsx file is a special file in Next.js that acts as the root component for your application. It is responsible for initializing global styles, providing data-fetching and state management providers, and maintaining the overall layout and structure of your app.
+You should create the _app.tsx file in the pages/ directory.
+
+Here's an example of an _app.tsx file:
+app.tsx:
+On the other hand, app.tsx is not a special file in Next.js. It does not have any specific functionality or meaning within the Next.js framework.
+You can create an app.tsx file if you have a specific purpose or requirement in your application that deviates from the standard Next.js conventions. It could be a custom component, a utility, or any other code related to your app's functionality.
+
+You can create the app.tsx file anywhere in your project's directory structure, depending on your desired organization and file structure.
+To summarize, _app.tsx is a special file in Next.js that acts as the root component of your application, while app.tsx is a generic file that you can create for custom purposes in your Next.js project.
