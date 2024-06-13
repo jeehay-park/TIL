@@ -107,3 +107,36 @@ export default sidebarSlice.reducer;
 ```
 
 By using `createSlice`, you ensure that action types, action creators, and reducers are generated automatically, reducing the likelihood of errors and improving code maintainability.
+
+📅 13/06/2024
+
+Errors and bugs both refer to issues within software, but they are distinct concepts:
+
+### Errors:
+- **Definition**: Errors are problems or issues that occur during the execution of a program, which may cause the program to produce incorrect results or to terminate unexpectedly.
+- **Nature**: Errors are typically related to the code itself, logical flaws, or system-level issues.
+- **Types**: There are various types of errors, including:
+  - **Syntax Errors**: Mistakes in the code that violate the rules of the programming language (e.g., missing semicolons, incorrect keywords).
+  - **Runtime Errors**: Errors that occur while the program is running (e.g., dividing by zero, null pointer dereferences).
+  - **Logical Errors**: Errors that cause the program to operate incorrectly but do not necessarily crash the program (e.g., incorrect algorithms, faulty logic).
+
+### Bugs:
+- **Definition**: Bugs are flaws or defects in the software that cause it to behave unexpectedly or incorrectly. Bugs are often introduced during the development phase and can be a result of coding errors, design flaws, or miscommunication among team members.
+- **Nature**: Bugs can manifest as errors, but they can also be more subtle issues that don't immediately cause the program to crash or produce incorrect results.
+- **Scope**: Bugs encompass a broader range of issues than errors. They can include performance problems, security vulnerabilities, usability issues, and more.
+
+### Key Differences:
+1. **Scope**:
+   - Errors are specific issues that arise during the execution of the program.
+   - Bugs are more general and encompass any flaw in the software, including errors, but also design flaws, usability issues, and other types of defects.
+
+2. **Manifestation**:
+   - Errors typically manifest as immediate problems that prevent the program from running correctly (e.g., crashes, incorrect outputs).
+   - Bugs may not always produce immediate or obvious symptoms and can lead to unexpected behavior over time.
+
+3. **Examples**:
+   - An **error** example: A syntax error in a Python program, such as a missing colon, that prevents the code from compiling.
+   - A **bug** example: A logical flaw in a sorting algorithm that causes it to fail under certain conditions, even though it compiles and runs without errors.
+
+### Conclusion:
+While errors are a subset of bugs focused on issues that occur during execution, bugs refer to any defect or flaw in the software. Understanding and distinguishing between these concepts can help in effectively diagnosing and addressing issues in software development.
