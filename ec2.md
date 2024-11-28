@@ -1,3 +1,97 @@
+# How to edit MariaDB inside the Docker container
+
+📅 28/02/2024
+
+`docker ps`
+- The output will show the running containers, and you should see your MariaDB container (myDatabase in your case).
+
+`docker exec -it 5b904b43787c bash`
+- Use `docker exec` to open a terminal inside the container. Replace 5b904b43787c with your container ID (if different):
+
+`mariadb -u root -p`
+- If the mariadb client is installed, this should prompt you for a password.
+
+`Enter password:`
+- Password Prompt:
+
+`SHOW DATABASES;`
+- Check the available databases
+
+`USE your_database_name;`
+- Select your database:
+
+`DROP DATABASE IF EXISTS manufacture_v3_0_test;`
+- This will remove the entire database and all its tables.
+
+`CREATE DATABASE myDatabase;`
+- Create a new database (if needed)
+
+`DROP TABLE IF EXISTS your_table_name;`
+- Drop the table:
+
+`SHOW TABLES;`
+- This will display a list of all the tables in the currently selected database.
+
+```
+MariaDB [manufacture_v3_0_test]> SHOW TABLES;
++---------------------------------+
+| Tables_in_manufacture_v3_0_test |
++---------------------------------+
+| code_enum                       |
+| code_info                       |
+| keyissue_config                 |
+| machine                         |
+| machine_device                  |
+| profile_config                  |
+| script_config                   |
+| sn_rule                         |
++---------------------------------+
+8 rows in set (0.000 sec)
+```
+`EXIT;`
+- Exit the MariaDB Client
+
+`exit`
+- Exit the Docker Container
+
+
+
+Here’s a summary of what you did and asked regarding MariaDB:
+
+### Actions Taken:
+1. **Accessed the MariaDB Docker Container**:
+   - Used the `docker exec -it <container_id> bash` command to enter the running MariaDB Docker container.
+
+2. **Entered the MariaDB Client**:
+   - Logged into MariaDB using the `mariadb -u root -p` command and provided the root password to access the database server.
+
+3. **Checked Available Databases**:
+   - Ran `SHOW DATABASES;` to list all existing databases in the MariaDB server.
+
+4. **Selected a Specific Database**:
+   - Used the `USE <database_name>;` command to switch to a specific database (e.g., `manufacture_v3_0_test`).
+
+5. **Listed Tables in the Database**:
+   - Used `SHOW TABLES;` to see all the tables in the selected database.
+
+6. **Dropped All Tables**:
+   - Executed `DROP TABLE <table_name>;` for each table or used a script/command to drop all tables in the database.
+
+7. **Created a New Database**:
+   - Used the `CREATE DATABASE <new_database_name>;` command to create a new database.
+
+### Questions You Asked:
+1. How to access the MariaDB client inside a Docker container.
+2. How to authenticate and log in as the root user.
+3. How to view all databases and tables.
+4. How to delete (drop) all tables in a database.
+5. How to create a new database.
+6. How to interpret prompts and error messages encountered during the process.
+
+
+
+
+
 # EC2, WSL2, Hypervisor, Bare Metal Server
 
 📅 15/02/2024
