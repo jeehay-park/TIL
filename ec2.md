@@ -1,7 +1,5 @@
 # How to edit MariaDB inside the Docker container
 
-📅 28/02/2024
-
 `docker ps`
 - The output will show the running containers, and you should see your MariaDB container (myDatabase in your case).
 
